@@ -22,8 +22,10 @@ export default class PropertyFilter extends LightningElement {
         this.fireChangeEvent();
     }
 
+    //入力したとき
     handleSearchKeyChange(event) {
         this.searchKey = event.detail.value;
+        console.log('searchKey: ' + this.searchKey);
         this.fireChangeEvent();
     }
 
